@@ -1,141 +1,144 @@
 // banner area start
-.banner_area {
-    border: $border;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - 75px);
-    position: relative;
-    @include xs() {
-        height: calc(100vh - 62px);
-    }
-    @include sm() {
-        height: calc(100vh - 62px);
-    }
-    @include md() {
-        height: calc(100vh - 62px);
-    }
-    @include lg() {
-        height: calc(100vh - 67px);
-    }
-    @include xl() {
-        height: calc(100vh - 74px);
-    }
-    @include xxl() {
-        height: calc(100vh - 74px);
-    }
-    .banner_icon {
+.banner_icon_1 {
+    .banner_area {
         border: $border;
-        
-        .banner_area_content {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: calc(100vh - 75px);
+        position: relative;
+        @include xs() {
+            height: calc(100vh - 62px);
+        }
+        @include sm() {
+            height: calc(100vh - 62px);
+        }
+        @include md() {
+            height: calc(100vh - 62px);
+        }
+        @include lg() {
+            height: calc(100vh - 67px);
+        }
+        @include xl() {
+            height: calc(100vh - 74px);
+        }
+        @include xxl() {
+            height: calc(100vh - 74px);
+        }
+        .banner_icon {
             border: $border;
-            // margin-top: calc(100vh - 200px);
-            // search area start
-            .search_area {
+
+            .banner_area_content {
                 border: $border;
-                justify-content: center;
-                display: flex;
-                position: absolute;
-                // bottom: 0px;
-                bottom: 70px;
-                left: 50%;
-                // top: 50%;
-                transform: translateY(-50%) translateX(-50%);
-
-                .form_area {
+                // margin-top: calc(100vh - 200px);
+                // search area start
+                .search_area {
                     border: $border;
+                    justify-content: center;
                     display: flex;
-                    background-color: $white;
-                    border-radius: 28px;
-                    padding: 0px 20px;
+                    position: absolute;
+                    // bottom: 0px;
+                    bottom: 70px;
+                    left: 50%;
+                    // top: 50%;
+                    transform: translateY(-50%) translateX(-50%);
 
-                    // drop_down_area start
-                    .drop_down_area {
+                    .form_area {
                         border: $border;
-                        align-items: center;
                         display: flex;
-                        .drop_down_botton {
+                        background-color: $white;
+                        border-radius: 28px;
+                        padding: 0px 20px;
+
+                        // drop_down_area start
+                        .drop_down_area {
                             border: $border;
-                            background-color: transparent;
-                            // align-items: center;
-                            display: flex;
-                            width: 40px;
-                            height: 40px;
                             align-items: center;
-                            justify-content: center;
-                            i {
+                            display: flex;
+                            .drop_down_botton {
                                 border: $border;
-                                font-size: 40px;
+                                background-color: transparent;
+                                // align-items: center;
+                                display: flex;
+                                width: 40px;
+                                height: 40px;
+                                align-items: center;
+                                justify-content: center;
+                                i {
+                                    border: $border;
+                                    font-size: 40px;
+                                    color: $light_black;
+                                    @include xs() {
+                                        font-size: 24px;
+                                    }
+                                    @include sm() {
+                                        font-size: 32px;
+                                    }
+                                    @include md() {
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                        }
+                        // drop_down_area end
+                        // search_title_and_search_icon_area start
+                        .search_title_and_search_icon_area {
+                            border: $border;
+                            display: flex;
+                            align-items: center;
+                            .input_area {
+                                border: $border;
+                                font-size: 24px;
+                                font-family: $font_bangla;
+                                outline: 0;
+                                padding: 10px 20px;
+                                width: 600px;
                                 color: $light_black;
                                 @include xs() {
-                                    font-size: 24px;
+                                    width: 160px;
+                                    font-size: 12px;
+                                    padding: 10px 3px;
                                 }
                                 @include sm() {
-                                    font-size: 32px;
+                                    width: 380px;
+                                    font-size: 18px;
                                 }
                                 @include md() {
-                                    font-size: 30px;
-                                }
-                            }
-                        }
-                    }
-                    // drop_down_area end
-                    // search_title_and_search_icon_area start
-                    .search_title_and_search_icon_area {
-                        border: $border;
-                        display: flex;
-                        align-items: center;
-                        .input_area {
-                            border: $border;
-                            font-size: 24px;
-                            font-family: $font_bangla;
-                            outline: 0;
-                            padding: 10px 20px;
-                            width: 600px;
-                            color: $light_black;
-                            @include xs() {
-                                width: 160px;
-                                font-size: 12px;
-                                padding: 10px 3px;
-                            }
-                            @include sm() {
-                                width: 380px;
-                                font-size: 18px;
-                            }
-                            @include md() {
-                                width:400px;
-                                font-size: 16px;
-                            }
-                        }
-                        .seaech_icon {
-                            border: $border;
-                            align-items: center;
-                            display: flex;
-                            width: 40px;
-                            height: 40px;
-                            align-items: center;
-                            justify-content: center;
-                            i {
-                                border: $border;
-                                font-size: 30px;
-                                color: $semi_black;
-                                @include xs() {
+                                    width: 400px;
                                     font-size: 16px;
                                 }
-                                @include sm() {
-                                    font-size: 20px;
-                                }
-                                @include md() {
-                                    font-size: 20px;
+                            }
+                            .seaech_icon {
+                                border: $border;
+                                align-items: center;
+                                display: flex;
+                                width: 40px;
+                                height: 40px;
+                                align-items: center;
+                                justify-content: center;
+                                i {
+                                    border: $border;
+                                    font-size: 30px;
+                                    color: $semi_black;
+                                    @include xs() {
+                                        font-size: 16px;
+                                    }
+                                    @include sm() {
+                                        font-size: 20px;
+                                    }
+                                    @include md() {
+                                        font-size: 20px;
+                                    }
                                 }
                             }
                         }
+                        // search_title_and_search_icon_area end
                     }
-                    // search_title_and_search_icon_area end
                 }
+                // search area end
             }
-            // search area end
         }
     }
 }
+
 // banner area end

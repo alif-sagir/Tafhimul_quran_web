@@ -7,8 +7,10 @@
     justify-content: center;
     display: flex;
     border-radius: 12px;
-
-    display: none;
+@include xs{
+    width: 240px;
+}
+    // display: none;
     
     .site_menu_ber_content{
         border: $border;
@@ -36,7 +38,12 @@
                     // padding: 0px 30px 0px 30px;
                     border-bottom: 1px solid $black;
                     padding-bottom: 10px;
-
+                    @include xs{
+                        font-size: 16px;
+                    }
+                    @include sm{
+                        font-size: 20px;
+                    }
                 }
             }
         }
