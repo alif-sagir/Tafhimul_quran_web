@@ -334,10 +334,8 @@ html ::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   display: flex;
   position: absolute;
-  bottom: 0px;
-  bottom: 30px;
+  bottom: 70px;
   left: 50%;
-  /* top: 50%; */
   transform: translateY(-50%) translateX(-50%);
 }
 .banner_area .banner_icon .banner_area_content .search_area .form_area {
