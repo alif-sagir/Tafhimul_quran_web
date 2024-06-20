@@ -1,0 +1,45 @@
+// menu_ber area start
+.site_menu_ber{
+    border: $border;
+    background-color: $brand_color;
+    width: 400px;
+    padding: 20px 0px;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;
+
+    display: none;
+    
+    .site_menu_ber_content{
+        border: $border;
+        width: 100%;
+
+        ul{
+            border: $border;
+            text-align: center;
+         
+           li{
+                border: $border;
+                &:hover{
+                    background-color: $off_black;
+                }
+                &:last-child a{
+                    border-bottom: 0px solid $black;
+                }
+                a{
+                    border: $border;
+                    font-size: 30px;
+                    font-family: $font_bangla;
+                    color: $white;
+                    width: 80%;
+                    padding-top: 15px;
+                    // padding: 0px 30px 0px 30px;
+                    border-bottom: 1px solid $black;
+                    padding-bottom: 10px;
+
+                }
+            }
+        }
+    }
+}
+// menu_ber area end

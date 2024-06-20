@@ -1,0 +1,31 @@
+// content area title start
+.content_area_title {
+    border: $border;
+    justify-content: center;
+    display: flex;
+    .title_text {
+        border: $border;
+        font-family: $font_bangla;
+        font-size: 50px;
+        color: $dark_green;
+        @include xs{
+            font-size: 30px;
+        }
+        @include sm{
+            font-size: 32px;
+        }
+        @include md{
+            font-size: 30px;
+        }
+        @include lg{
+            font-size: 40px;
+        }
+        @include xl{
+            font-size: 40px;
+        }
+        @include xxl{
+            font-size: 42px;
+        }
+    }
+}
+// content area title end

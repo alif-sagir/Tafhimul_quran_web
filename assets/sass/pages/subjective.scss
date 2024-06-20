@@ -1,0 +1,629 @@
+// subjective_area_content start
+.subjective_area_content {
+    border: $border;
+    margin-bottom: 100px;
+    @include xs {
+        margin-bottom: 50px;
+    }
+    @include sm {
+        margin-bottom: 40px;
+    }
+    @include md{
+        margin-bottom: 80px;
+    }
+    @include xl{
+        margin-bottom: 90px;
+    }
+}
+// subjective_area_content end
+
+// select and full sura area start
+.select_and_full_sura_area {
+    border: $border;
+    margin: 100px 0px;
+    @include xs {
+        margin: 50px 0px;
+    }
+    @include sm {
+        margin: 60px 0px;
+    }
+    @include md {
+        margin: 80px 0px;
+    }
+    @include xl {
+        margin: 90px 0px;
+    }
+    .select_and_full_sura_area_content {
+        border: $border;
+        // select_area start
+        .select_area {
+            border: $border;
+            display: flex;
+            border: 3px solid $brand_color;
+            padding: 10px 20px;
+            border-radius: 9px;
+            margin-bottom: 50px;
+            @include xs {
+                padding: 15px 10px;
+                margin-bottom: 40px;
+            }
+            @include sm {
+                padding: 15px 30px;
+                margin-bottom: 40px;
+            }
+            .select_sura_area {
+                border: $border;
+                position: relative;
+                @include xs {
+                    flex: 1;
+                    align-items: center;
+                    display: flex;
+                }
+                @include sm {
+                    flex: 1;
+                    align-items: center;
+                    display: flex;
+                }
+                @include md {
+                    align-items: center;
+                    display: flex;
+                    flex: 1;
+                }
+                @include lg {
+                    align-items: center;
+                    display: flex;
+                }
+                @include xl {
+                    align-items: center;
+                    display: flex;
+                }
+                &::after {
+                    content: "";
+                    width: 2px;
+                    height: 57px;
+                    background-color: $brand_color;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    @include xs {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                    @include sm {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                    @include md {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                    @include lg {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                    @include xl {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                    @include xxl {
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        height: 35px;
+                    }
+                }
+                .sura_name_and_icon {
+                    border: $border;
+                    background-color: transparent;
+                    margin-right: 50px;
+                    padding: 0px 15px;
+                    @include xs {
+                        margin-right: 15px;
+                        padding: 0px;
+                    }
+                    @include sm {
+                        margin-right: 15px;
+                        padding: 0px;
+                    }
+                    span {
+                        border: $border;
+                        font-size: 36px;
+                        font-family: $font_bangla;
+                        color: $brand_color;
+                        @include xs {
+                            font-size: 18px;
+                        }
+                        @include sm {
+                            font-size: 20px;
+                        }
+                        @include md {
+                            font-size: 22px;
+                        }
+                        @include lg {
+                            font-size: 26px;
+                        }
+                        @include xl {
+                            font-size: 30px;
+                        }
+                        @include xxl {
+                            font-size: 30px;
+                        }
+                        i {
+                            border: $border;
+                            margin-left: 20px;
+                            @include xs {
+                                margin-left: 5px;
+                            }
+                            @include sm {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .select_ayet_area {
+                border: $border;
+                margin-left: 50px;
+                @include xs {
+                    margin-left: 15px;
+                    width: 100px;
+                    align-items: center;
+                    display: flex;
+                }
+                @include sm {
+                    margin-left: 15px;
+                    width: 230px;
+                    align-items: center;
+                    display: flex;
+                }
+                @include md {
+                    margin-left: 15px;
+                    width: 360px;
+                    align-items: center;
+                    display: flex;
+                }
+                // @include xl {
+                //     margin-left: 15px;
+                //     width: 360px;
+                //     align-items: center;
+                //     display: flex;
+                // }
+                .ayet_name_and_icon {
+                    border: $border;
+                    background-color: transparent;
+                    padding: 0px 15px;
+                    @include xs {
+                        padding: 0px;
+                    }
+                    @include sm {
+                        padding: 0px;
+                    }
+                    span {
+                        border: $border;
+                        font-size: 36px;
+                        font-family: $font_bangla;
+                        color: $brand_color;
+                        @include xs {
+                            font-size: 18px;
+                        }
+                        @include sm {
+                            font-size: 20px;
+                        }
+                        @include md {
+                            font-size: 22px;
+                        }
+                        @include lg {
+                            font-size: 26px;
+                        }
+                        @include xl{
+                            font-size: 30px;
+                        }
+                        @include xxl{
+                            font-size: 30px;
+                        }
+                        i {
+                            border: $border;
+                            margin-left: 20px;
+                            @include xs {
+                                margin-left: 5px;
+                            }
+                            @include sm {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // select_area end
+
+        // full_sura_area start
+        .full_sura_area {
+            border: $border;
+            .full_sura_header_area {
+                border: $border;
+                background-color: $brand_color;
+                padding: 18px 40px;
+                border-radius: 30px 30px 0px 0px;
+                @include xs {
+                    padding: 20px 20px;
+                }
+                // @include sm{
+                //     padding: 20px 20px;
+                // }
+                .sura_name_and_ayet_and_place_of_descent {
+                    border: $border;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .sura_name {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        @include xs {
+                            margin-right: 10px;
+                        }
+                        .name_text {
+                            border: $border;
+                            font-size: 30px;
+                            font-family: $font_bangla;
+                            color: $white;
+                            @include xs {
+                                font-size: 16px;
+                            }
+                            @include sm {
+                                font-size: 20px;
+                            }
+                            @include md {
+                                font-size: 22px;
+                            }
+                            @include lg {
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                    .ayet_and_place_of_descent {
+                        border: $border;
+                        display: flex;
+                        gap: 40px;
+                        @include xs {
+                            gap: 10px;
+                        }
+                        @include sm {
+                            gap: 20px;
+                        }
+                        @include md {
+                            gap: 25px;
+                        }
+                        .ayet_area {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            .ayet_text {
+                                border: $border;
+                                font-size: 30px;
+                                font-family: $font_bangla;
+                                color: $white;
+                                @include xs {
+                                    font-size: 18px;
+                                }
+                                @include sm {
+                                    font-size: 20px;
+                                }
+                                @include md {
+                                    font-size: 22px;
+                                }
+                                @include lg {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                        .place_of_descent {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            .place_of_descent_text {
+                                border: $border;
+                                font-size: 30px;
+                                font-family: $font_bangla;
+                                color: $white;
+                                @include xs {
+                                    font-size: 18px;
+                                }
+                                @include sm {
+                                    font-size: 20px;
+                                }
+                                @include md {
+                                    font-size: 22px;
+                                }
+                                @include lg {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .full_sura {
+                border: $border;
+                display: flex;
+                justify-content: end;
+                border: 3px solid $brand_color;
+                padding: 80px 40px;
+                line-height: 60px;
+                border-radius: 0px 0px 30px 30px;
+                @include xs {
+                    padding: 20px 10px;
+                    line-height: 40px;
+                    display: block;
+                }
+                @include sm {
+                    padding: 40px 20px;
+                    line-height: 48px;
+                }
+                @include md {
+                    padding: 50px 40px;
+                }
+                @include lg {
+                    line-height: 56px;
+                    padding: 50px 45px;
+
+                }
+                @include xl {
+                    padding: 60px 40px;
+
+                }
+                .left_area {
+                    position: relative;
+                    margin-right: 25px;
+                    padding-right: 25px;
+                    @include xs {
+                        margin-right: 0px;
+                        padding-right: 0px;
+                    }
+                    .full_sura_left_area {
+                        border: $border;
+                        &::after {
+                            content: "";
+                            width: 1px;
+                            height: 100%;
+                            background-color: $black;
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            @include xs {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .left_and_right_area {
+                    border: $border;
+                    ul {
+                        border: $border;
+                        li {
+                            border: $border;
+                            .bangla_text {
+                                border: $border;
+                                font-size: 24px;
+                                font-family: $font_bangla;
+                                color: $black;
+                                @include xs {
+                                    font-size: 16px;
+                                }
+                                @include sm {
+                                    font-size: 20px;
+                                }
+                                @include md{
+                                    font-size: 22px;
+                                }
+                                @include lg{
+                                    font-size: 24px;
+                                }
+                            }
+                            .arabic_text {
+                                border: $border;
+                                font-size: 24px;
+                                font-family: $font_bangla;
+                                color: $black;
+                                @include xs {
+                                    font-size: 16px;
+                                }
+                                @include sm {
+                                    font-size: 20px;
+                                }
+                                @include md{
+                                    font-size: 22px;
+                                }
+                                @include lg{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .full_sura_right_area {
+                    border: $border;
+                }
+            }
+        }
+        // full_sura_area end
+    }
+}
+// select and full sura area end
+
+// paragraph_content start
+.all_paragraph_content_area {
+    border: $border;
+    .all_paragraph_content {
+        border: $border;
+        gap: 70px;
+        display: grid;
+        margin-bottom: 50px;
+        @include xs {
+            gap: 40px;
+        }
+        @include sm {
+            gap: 50px;
+        }
+        @include md {
+            gap: 50px;
+        }
+        .paragraph_content {
+            border: $border;
+            .paragraph_title {
+                border: $border;
+                margin-bottom: 20px;
+                .title_text {
+                    border: $border;
+                    font-family: $font_bangla;
+                    font-size: 36px;
+                    color: $brand_color;
+                    @include xs {
+                        font-size: 30px;
+                    }
+                    @include sm {
+                        font-size: 32px;
+                    }
+                    @include md {
+                        font-size: 32px;
+                    }
+                }
+            }
+            .paragraph_discription {
+                border: $border;
+                text-align: justify;
+                .discription_text {
+                    border: $border;
+                    font-family: $font_bangla;
+                    font-size: 34px;
+                    color: $black;
+                    line-height: 50px;
+                    @include xs {
+                        font-size: 18px;
+                        line-height: 40px;
+                    }
+                    @include sm {
+                        font-size: 20px;
+                        line-height: 44px;
+                    }
+                    @include md{
+                        font-size: 22px;
+                    }
+                    @include lg{
+                        font-size: 24px;
+                    }
+                    @include xl{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// paragraph_content end
+
+// share and favorite area start
+.share_and_favorite_area {
+    border: $border;
+
+    .share_and_favorite_area {
+        border: $border;
+        display: flex;
+        gap: 70px;
+        @include xs {
+            gap: 15px;
+        }
+        @include sm {
+            gap: 30px;
+        }
+        @include md {
+            gap: 40px;
+        }
+        @include lg {
+            gap: 40px;
+        }
+        @include xl {
+            gap: 40px;
+        }
+        .area {
+            border: $border;
+            align-items: center;
+            display: flex;
+            background-color: transparent;
+            padding: 0px;
+            &:hover .icon {
+                color: $hover_color;
+            }
+            &:hover .text {
+                color: $hover_color;
+            }
+            .icon {
+                border: $border;
+                color: $semi_black;
+                font-size: 80px;
+                margin-right: 20px;
+                transition-duration: 0.4s;
+                @include xs {
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+                @include sm {
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+                @include md {
+                    font-size: 36px;
+                    margin-right: 15px;
+                }
+                @include lg {
+                    font-size: 40px;
+                    margin-right: 15px;
+                }
+                @include xl {
+                    font-size: 50px;
+                    margin-right: 15px;
+                }
+                @include xxl {
+                    font-size: 60px;
+                }
+            }
+            .text {
+                border: $border;
+                font-size: 50px;
+                font-family: $font_bangla;
+                color: $black;
+                text-transform: capitalize;
+                transition-duration: 0.4s;
+                @include xs {
+                    font-size: 24px;
+                }
+                @include sm {
+                    font-size: 30px;
+                }
+                @include md {
+                    font-size: 36px;
+                }
+                @include lg {
+                    font-size: 40px;
+                    margin-right: 15px;
+                }
+                @include xl {
+                    font-size: 50px;
+                    margin-right: 15px;
+                }
+                @include xxl {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+// share and favorite area end

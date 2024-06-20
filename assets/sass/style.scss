@@ -1,0 +1,27 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./core/typography";
+@import "./core/reset";
+@import "./core/root";
+@import "./vendors/grid";
+
+// page_import_start
+@import "./layouts/navigation";
+@import "./layouts/site_menu_ber";
+@import "./layouts/banner";
+@import "./components/content_area_title.scss";
+@import "./pages/index.scss";
+@import "./pages/about_us.scss";
+@import "./pages/donate.scss";
+@import "./pages/contact.scss";
+@import "./pages/subjective.scss";
+
+// page_import_end
+
+// all area main class start (For Responsive)
+
+.subjective_area_content
+{
+// display: none;
+}
+// all area main class end

@@ -1,0 +1,134 @@
+// donet area start
+.donet_area {
+    border: $border;
+    margin: 100px 0px;
+@include xs{
+    margin: 50px 0px;
+}
+@include sm{
+    margin: 60px 0px;
+}
+@include md{
+    margin: 80px 0px;
+}
+@include lg{
+    margin: 80px 0px;
+}
+@include xl{
+    margin: 80px 0px;
+}
+    .donet_area_content {
+        border: $border;
+        border: 3px solid $green;
+        .edit1_content_area_title {
+            border: $border;
+            background-color: $green;
+            padding: 10px 0px;
+            .title_text{
+                border: $border;
+                color: $white;
+            }
+        }
+        // donet_content area start
+        .donet_content {
+            border: $border;
+            margin-top: 50px;
+            padding: 50px 100px 100px 100px;
+            @include xs{
+                padding: 20px;
+                margin-top: 0px;
+            }
+            @include sm{
+                padding: 30px 20px;
+                margin-top: 0px;
+            }
+            @include md{
+                padding: 60px 40px;
+                margin-top: 0px;
+            }
+            .donet_text_area {
+                border: $border;
+                .donet_text {
+                    border: $border;
+                    font-size: 35px;
+                    color: $black;
+                    font-family: $font_bangla;
+                    line-height: 50px;
+                    @include xs{
+                        font-size: 18px;
+                    }
+                    @include sm{
+                        font-size: 22px;
+                    }
+                    @include md{
+                        font-size: 28px;
+                    }
+                    @include lg{
+                        font-size: 30px;
+                    }
+                    .text {
+                        border: $border;
+                        .inner_link {
+                            border: $border;
+                            color: $black;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        // donet_content area end
+
+        // donet button area start
+        .donet_button_area {
+            border: $border;
+            margin-top: 50px;
+            gap: 80px;
+            display: flex;
+            @include xs{
+                gap: 14px;
+            }
+            @include sm{
+                gap: 20px;
+            }
+            @include md{
+                gap: 30px;
+            }
+            @include lg{
+                gap: 40px;
+            }
+            .donet_button {
+                border: $border;
+                font-size: 35px;
+                color: $white;
+                font-family: $font_bangla;
+                background-color: $dark_green;
+                padding: 10px 40px;
+                transition-duration: .4s;
+                &:hover {
+                    background-color: $hover_color;
+                }
+                @include xs{
+                    padding: 5px 14px;
+                    font-size: 18px;
+                }
+                @include sm{
+                    padding: 8px 20px;
+                    font-size: 22px;
+                }
+                @include md{
+                    padding: 8px 33px;
+                    font-size: 24px;
+                }
+                @include lg{
+                    font-size: 26px;
+                }
+                @include xl{
+                    font-size: 30px;
+                }
+            }
+        }
+        // donet button area end
+    }
+}
+// donet area end

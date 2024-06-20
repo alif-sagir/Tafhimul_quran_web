@@ -1,0 +1,180 @@
+// table of contents area start
+.table_of_contents_area {
+    border: $border;
+    margin: 100px 0px;
+    @include xs {
+        margin: 50px 0px;
+    }
+    @include sm {
+        margin: 60px 0px;
+    }
+    @include md {
+        margin: 80px 0px;
+    }
+    @include lg {
+        margin: 70px 0px;
+    }
+    @include xl {
+        margin: 80px 0px;
+    }
+    .table_of_contents_area_content {
+        border: $border;
+        margin-top: 50px;
+
+        // table_of_contents start
+        .table_of_contents {
+            border: $border;
+            margin-top: 50px;
+            @include xs {
+                margin-top: 30px;
+            }
+            @include sm {
+                margin-top: 40px;
+            }
+            ul {
+                border: $border;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px 80px;
+
+                li {
+                    border: $border;
+                    width: 530px;
+                    background-color: $brand_color;
+                    padding: 13px 15px;
+                    border-radius: 10px;
+                    align-items: center;
+                    display: flex;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        background-color: $hover_color;
+                    }
+                    @include md {
+                       width: 308px;
+                    }
+                    @include lg {
+                       width: 428px;
+                    }
+                    @include xl{
+                       width: 518px;
+                    }
+                    .item {
+                        border: $border;
+                        width: 100%;
+                        .item_area {
+                            border: $border;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            // item_name area start
+                            .item_name {
+                                border: $border;
+                                align-items: center;
+                                display: flex;
+                                flex: 1;
+                                margin-left: 15px;
+                                .item_name_title {
+                                    border: $border;
+                                    font-size: 36px;
+                                    font-family: $font_bangla;
+                                    color: $white;
+                                    @include xs {
+                                        font-size: 18px;
+                                    }
+                                    @include sm {
+                                        font-size: 20px;
+                                    }
+                                    @include md {
+                                        font-size: 16px;
+                                    }
+                                    @include lg {
+                                        font-size: 22px;
+                                    }
+                                    @include xl {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                            // item_name area end
+                            // place and ayet area start
+                            .place_and_ayet_area {
+                                border: $border;
+                                align-items: center;
+                                display: flex;
+                                width: 120px;
+                                margin-left: 20px;
+                                text-align: center;
+                                @include xs {
+                                    width: 100px;
+                                    margin-left: 10px;
+                                }
+                                .place_and_ayet_area_content {
+                                    border: $border;
+                                    width: 100%;
+                                    .place {
+                                        border: $border;
+                                        .place_title {
+                                            border: $border;
+                                            font-size: 30px;
+                                            font-family: $font_bangla;
+                                            color: $white;
+                                            @include xs {
+                                                font-size: 18px;
+                                            }
+                                            @include sm {
+                                                font-size: 20px;
+                                            }
+                                            @include md {
+                                                font-size: 16px;
+                                            }
+                                            @include lg{
+                                                font-size: 22px;
+                                            }
+                                            @include xl{
+                                                font-size: 24px;
+                                            }
+                                        }
+                                    }
+                                    .ayet_area {
+                                        border: $border;
+                                        .ayet_title_and_name_area {
+                                            border: $border;
+                                            font-size: 20px;
+                                            font-family: $font_bangla;
+                                            color: $white;
+                                            @include xs {
+                                                font-size: 14px;
+                                            }
+                                            @include sm {
+                                                font-size: 16px;
+                                            }
+                                            @include md {
+                                                font-size: 13px;
+                                            }
+                                            @include lg{
+                                                font-size: 16px;
+                                            }
+                                            @include xl{
+                                                font-size: 16px;
+                                            }
+                                            .ayet_title {
+                                                border: $border;
+                                            }
+                                            .ayet_number {
+                                                border: $border;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // place and ayet area end
+                        }
+                    }
+                }
+            }
+        }
+        // table_of_contents start
+    }
+}
+// table of contents area end

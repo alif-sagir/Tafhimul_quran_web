@@ -1,0 +1,137 @@
+// navigation area start
+.nav_area {
+    border: $border;
+    background-color: $brand_color;
+    padding: 16px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+
+    .nav_area_content {
+        border: $border;
+        display: flex;
+        // navbar icon start
+        .navbar_icon {
+            border: $border;
+            align-items: center;
+            display: flex;
+
+            i {
+                border: $border;
+                color: $white;
+                font-size: 35px;
+                @include xs() {
+                    font-size: 24px;
+                }
+                @include sm() {
+                    font-size: 24px;
+                }
+                @include md() {
+                    font-size: 24px;
+                }
+            }
+        }
+        // navbar icon end
+
+        // menu area start
+        .memu_area {
+            border: $border;
+            align-items: center;
+            display: flex;
+            margin-left: 75px;
+            @include xs() {
+                display: none;
+            }
+            @include sm() {
+                display: none;
+            }
+            @include md() {
+                margin-left: 50px;
+            }
+            ul {
+                border: $border;
+                display: flex;
+                align-items: center;
+
+                li {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    &::after {
+                        content: "";
+                        width: 2px;
+                        height: 30px;
+                        background-color: $off_black;
+                        margin: 0px 18px;
+                    }
+                    // &::after:last-child {
+                    //     display: none;
+                    // }
+                    .menu_ber {
+                        border: $border;
+                        color: $white;
+                        font-family: $font_bangla;
+                        font-size: 28px;
+                        transition-duration: 0.4s;
+                        &:hover {
+                            color: $off_black;
+                        }
+
+                        @include md() {
+                            font-size: 15px;
+                        }
+                        @include lg() {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        // menu area end
+
+        // social media area start
+        .social_media_area {
+            border: $border;
+            margin-left: auto;
+            align-items: center;
+            display: flex;
+
+            ul {
+                border: $border;
+                display: flex;
+                gap: 10px;
+
+                li {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    .social_media_icon {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        width: 30px;
+                        border: 1px solid $white;
+                        height: 30px;
+                        border-radius: 50%;
+                        justify-content: center;
+                        transition-duration: 0.4s;
+                        &:hover {
+                            border-color: $off_black;
+                        }
+                        &:hover i {
+                            color: $off_black;
+                        }
+                        i {
+                            border: $border;
+                            font-size: 16px;
+                            color: $white;
+                            transition-duration: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+        // social media area end
+    }
+}
+// navigation area end
